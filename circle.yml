@@ -8,8 +8,6 @@ machine:
 dependencies:
   pre:
     - echo "memory_limit = 64M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
-  override:
-    - composer install --prefer-source --no-interaction --no-dev
 test:
   override:
     - vendor/bin/phpunit
