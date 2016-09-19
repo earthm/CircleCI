@@ -10,4 +10,4 @@ dependencies:
     - echo "memory_limit = 64M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
 test:
   override:
-    - vendor/bin/phpunit
+    - phpunit Test.php
